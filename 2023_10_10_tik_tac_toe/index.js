@@ -9,11 +9,11 @@ const checkFunc = (id) => {
     if ((count & 1) != 1) {
         arr[parseInt(id[1])] = 1;
         cell.innerHTML = "<img src='assets/cross.png'>"
-        x = 1;
+        x = 'X';
     } else {
-        cell.innerHTML = "<img src='assets/circle.png'>"
         arr[parseInt(id[1])] = 2;
-        x = 2;
+        cell.innerHTML = "<img src='assets/circle.png'>"
+        x = 'O';
     }
     count++;
 
@@ -40,16 +40,16 @@ const checkFunc = (id) => {
         return;
 
     setTimeout(() => {
-        arr.fill(0);
-
+        
         header.textContent = 'Tic-Tac-Toe';
-
-        for (let i = 0; i < 9; i++)
-            cell.innerHTML = '';
-
+        
+        document.querySelectorAll('.col').forEach((i) => {
+            i.innerHTML = '';
+        })
+        
     }, 2000);
-
-
+    
+    arr.fill(0);
     console.log(arr);
 
     return;
