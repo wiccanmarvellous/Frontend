@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(36, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#heading {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5rem;
+    font-size: 3rem;
+    color: #419197;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    background-color: #419197;
+    margin: 1rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #12486B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
